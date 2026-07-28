@@ -61,7 +61,21 @@ st.markdown("Find the perfect place to eat based on your unique preferences! Pow
 st.sidebar.header("🎯 Your Preferences")
 
 # 1. Location Input
-location = st.sidebar.text_input("📍 Location/City", placeholder="e.g. Bangalore, Banashankari")
+city_areas = {
+    "Bangalore": ["Banashankari", "BTM", "Koramangala", "Indiranagar", "Jayanagar", "JP Nagar", "Marathahalli", "HSR", "Whitefield", "Malleshwaram"],
+    "Chennai": ["T Nagar", "Adyar", "Velachery", "Anna Nagar", "Nungambakkam"],
+    "Hyderabad": ["Banjara Hills", "Jubilee Hills", "Gachibowli", "Madhapur", "Kondapur"],
+    "Delhi": ["Connaught Place", "Hauz Khas", "Rajouri Garden", "Saket", "Vasant Kunj"],
+    "Mumbai": ["Bandra", "Andheri", "Colaba", "Juhu", "Powai"]
+}
+
+selected_city = st.sidebar.selectbox("🏙️ City", options=list(city_areas.keys()))
+
+if selected_city != "Bangalore":
+    st.sidebar.warning("Note: The current dataset only contains Zomato data for Bangalore! Searches in other cities will return 0 results.")
+
+selected_area = st.sidebar.selectbox("📍 Area", options=city_areas[selected_city])
+location = selected_area
 
 # 2. Cuisine Input
 # Standard cuisines found in the dataset
@@ -72,10 +86,7 @@ selected_cuisines = st.sidebar.multiselect("🍕 Cuisine(s)", options=cuisines_l
 budget_range = st.sidebar.slider("💰 Budget (Cost for Two)", min_value=100, max_value=5000, value=(500, 2000), step=100)
 
 # 4. Rating Input
-min_rating = st.sidebar.slider("⭐ Minimum Rating", min_value=1.0, max_value=5.0, value=4.0, step=0.1)
-
-# 5. Additional Preferences
-additional_prefs = st.sidebar.text_area("✍️ Additional Preferences", placeholder="e.g. Must have outdoor seating, family-friendly, live music...")
+min_rating = st.sidebar.slider("⭐ Minimum Rating", min_value=3.5, max_value=5.0, value=4.0, step=0.1)
 
 # Submit Button
 submit = st.sidebar.button("🔍 Find Restaurants", use_container_width=True)
@@ -99,7 +110,7 @@ if submit:
                 min_budget=budget_range[0],
                 max_budget=budget_range[1],
                 min_rating=min_rating,
-                additional_prefs=additional_prefs
+                additional_prefs=""
             )
             
             # Phase 2: Hard Filtering
