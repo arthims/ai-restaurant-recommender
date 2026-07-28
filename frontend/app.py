@@ -4,7 +4,7 @@ import sys
 import os
 
 # Ensure we can import from backend and llm folders
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from backend.models import UserPreferences
 from backend.filter_engine import load_data, filter_restaurants
