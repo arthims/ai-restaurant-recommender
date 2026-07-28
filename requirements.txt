@@ -4,3 +4,7 @@ google-play-scraper
 app-store-scraper
 python-dotenv
 langchain-groq
+datasets
+pyarrow
+fastparquet
+pydantic
