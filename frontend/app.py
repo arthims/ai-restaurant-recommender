@@ -182,22 +182,17 @@ st.markdown("Find the perfect place to eat based on your unique preferences! Pow
 
 st.sidebar.header("🎯 Your Preferences")
 
-# City & Area dropdowns
-city_areas = {
-    "Bangalore": ["Banashankari", "BTM", "Koramangala", "Indiranagar", "Jayanagar",
-                  "JP Nagar", "Marathahalli", "HSR Layout", "Whitefield", "Malleshwaram",
-                  "Electronic City", "Hebbal", "Yelahanka", "Rajajinagar"],
-    "Chennai": ["T Nagar", "Adyar", "Velachery", "Anna Nagar", "Nungambakkam"],
-    "Hyderabad": ["Banjara Hills", "Jubilee Hills", "Gachibowli", "Madhapur", "Kondapur"],
-    "Delhi": ["Connaught Place", "Hauz Khas", "Rajouri Garden", "Saket", "Vasant Kunj"],
-    "Mumbai": ["Bandra", "Andheri", "Colaba", "Juhu", "Powai"]
-}
+# City fixed to Bangalore (dataset only covers Bangalore)
+st.sidebar.markdown("🏙️ **City: Bangalore**")
 
-selected_city = st.sidebar.selectbox("🏙️ City", options=list(city_areas.keys()))
-if selected_city != "Bangalore":
-    st.sidebar.warning("⚠️ Dataset currently only has Bangalore restaurants. Other cities will return no results.")
+bangalore_areas = [
+    "Banashankari", "BTM", "Koramangala", "Indiranagar", "Jayanagar",
+    "JP Nagar", "Marathahalli", "HSR Layout", "Whitefield", "Malleshwaram",
+    "Electronic City", "Hebbal", "Yelahanka", "Rajajinagar", "Bellandur",
+    "Sarjapur", "Basavanagudi", "Frazer Town", "MG Road", "Brigade Road"
+]
 
-selected_area = st.sidebar.selectbox("📍 Area", options=city_areas[selected_city])
+selected_area = st.sidebar.selectbox("📍 Area", options=bangalore_areas)
 location = selected_area
 
 cuisines_list = ["North Indian", "South Indian", "Chinese", "Italian", "Mexican",
