@@ -1,10 +1,8 @@
 streamlit
 pandas
-google-play-scraper
-app-store-scraper
+pyarrow
+pydantic
 python-dotenv
 langchain-groq
+langchain-core
 datasets
-pyarrow
-fastparquet
-pydantic
