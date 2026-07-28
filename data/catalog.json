@@ -1,0 +1,218 @@
+[
+  {
+    "id": "prod_onion",
+    "name": "Fresh Onion",
+    "category": "Fruits & Vegetables",
+    "price": 40,
+    "unit": "1 kg",
+    "image": "🧅",
+    "description": "Crisp and flavorful onions, sourced directly from local farms. Essential for every Indian kitchen."
+  },
+  {
+    "id": "prod_tomato",
+    "name": "Organic Tomato",
+    "category": "Fruits & Vegetables",
+    "price": 35,
+    "unit": "500 g",
+    "image": "🍅",
+    "description": "Juicy and ripe organic tomatoes. Perfect for curries, salads, and soups."
+  },
+  {
+    "id": "prod_potato",
+    "name": "Fresh Potato (Jyoti)",
+    "category": "Fruits & Vegetables",
+    "price": 30,
+    "unit": "1 kg",
+    "image": "🥔",
+    "description": "High-quality Jyoti potatoes, perfect for boiling, frying, or baking."
+  },
+  {
+    "id": "prod_banana",
+    "name": "Cavendish Banana",
+    "category": "Fruits & Vegetables",
+    "price": 45,
+    "unit": "6 pcs",
+    "image": "🍌",
+    "description": "Fresh, sweet, and perfectly ripe Cavendish bananas. A great daily energy booster."
+  },
+  {
+    "id": "prod_milk",
+    "name": "Amul Taaza Fresh Milk",
+    "category": "Dairy & Bread",
+    "price": 56,
+    "unit": "1 L",
+    "image": "🥛",
+    "description": "Homogenized toned milk by Amul. Perfect for tea, coffee, and daily consumption."
+  },
+  {
+    "id": "prod_bread",
+    "name": "Harvest Gold Sandwich Bread",
+    "category": "Dairy & Bread",
+    "price": 30,
+    "unit": "400 g",
+    "image": "🍞",
+    "description": "Soft and fresh sandwich bread. Sliced and ready to toast."
+  },
+  {
+    "id": "prod_butter",
+    "name": "Amul Butter",
+    "category": "Dairy & Bread",
+    "price": 58,
+    "unit": "100 g",
+    "image": "🧈",
+    "description": "Utterly butterly delicious salted butter from Amul. Perfect for spreading and baking."
+  },
+  {
+    "id": "prod_eggs",
+    "name": "Organic Table Eggs",
+    "category": "Dairy & Bread",
+    "price": 75,
+    "unit": "Pack of 6",
+    "image": "🥚",
+    "description": "Farm-fresh, clean, and nutrient-rich table eggs. High in protein."
+  },
+  {
+    "id": "prod_chips",
+    "name": "Lay's Classic Salted Chips",
+    "category": "Munchies & Beverages",
+    "price": 20,
+    "unit": "50 g",
+    "image": "🍟",
+    "description": "Crisp potato chips seasoned with classic salt flavor. The ultimate movie snack."
+  },
+  {
+    "id": "prod_cola",
+    "name": "Coca Cola",
+    "category": "Munchies & Beverages",
+    "price": 40,
+    "unit": "750 ml",
+    "image": "🥤",
+    "description": "Refreshing and bubbly Coca-Cola. Best served chilled."
+  },
+  {
+    "id": "prod_kurkure",
+    "name": "Kurkure Masala Munch",
+    "category": "Munchies & Beverages",
+    "price": 20,
+    "unit": "90 g",
+    "image": "🍿",
+    "description": "Spicy, crunchy, and savory corn puffs. Classic Indian snack."
+  },
+  {
+    "id": "prod_yogurt",
+    "name": "Epigamia Blueberry Greek Yogurt",
+    "category": "Gourmet & Organic",
+    "price": 60,
+    "unit": "90 g",
+    "image": "🍧",
+    "description": "Thick, creamy, and packed with real blueberries. A healthy and delicious snack."
+  },
+  {
+    "id": "prod_olive_oil",
+    "name": "Borges Extra Virgin Olive Oil",
+    "category": "Gourmet & Organic",
+    "price": 650,
+    "unit": "500 ml",
+    "image": "🫒",
+    "description": "Cold pressed premium extra virgin olive oil. Ideal for salads, dressings, and light cooking."
+  },
+  {
+    "id": "prod_pasta",
+    "name": "Borges Penne Durum Wheat Pasta",
+    "category": "Gourmet & Organic",
+    "price": 150,
+    "unit": "500 g",
+    "image": "🍝",
+    "description": "Authentic Italian durum wheat penne pasta. High in fiber and protein."
+  },
+  {
+    "id": "prod_detergent",
+    "name": "Surf Excel Easy Wash Detergent",
+    "category": "Household Essentials",
+    "price": 140,
+    "unit": "1 kg",
+    "image": "🧼",
+    "description": "Stain remover powder detergent. Dissolves quickly and cleans deeply."
+  },
+  {
+    "id": "prod_dishwash",
+    "name": "Vim Lemon Dishwash Liquid",
+    "category": "Household Essentials",
+    "price": 55,
+    "unit": "250 ml",
+    "image": "🧴",
+    "description": "Concentrated lemon dishwashing gel. Cuts through tough grease easily."
+  },
+  {
+    "id": "prod_facewash",
+    "name": "Himalaya Purifying Neem Face Wash",
+    "category": "Personal Care",
+    "price": 150,
+    "unit": "100 ml",
+    "image": "🧼",
+    "description": "Herbal formulation that cleans impurities and helps clear pimples. Suitable for all skin types."
+  },
+  {
+    "id": "prod_shampoo",
+    "name": "Khadi Natural Amla & Bhringraj Shampoo",
+    "category": "Personal Care",
+    "price": 220,
+    "unit": "210 ml",
+    "image": "🧴",
+    "description": "Natural herbal shampoo for hair growth and scalp conditioning. SLS & Paraben free."
+  },
+  {
+    "id": "prod_wipes",
+    "name": "Pampers Baby Gentle Wipes",
+    "category": "Baby Care",
+    "price": 199,
+    "unit": "Pack of 80",
+    "image": "🧻",
+    "description": "Mild and alcohol-free baby wipes. Infused with aloe vera to prevent rashes."
+  },
+  {
+    "id": "prod_diapers",
+    "name": "MamyPoko Pants Baby Diapers (M)",
+    "category": "Baby Care",
+    "price": 149,
+    "unit": "10 pcs",
+    "image": "👶",
+    "description": "Pants-style diapers with crisscross sheet for up to 12 hours absorption. Size Medium."
+  },
+  {
+    "id": "prod_dog_food",
+    "name": "Pedigree Dry Dog Food (Chicken)",
+    "category": "Pet Supplies",
+    "price": 320,
+    "unit": "1.2 kg",
+    "image": "🐶",
+    "description": "Complete and balanced dry kibble for adult dogs. Promotes strong immunity and healthy skin."
+  },
+  {
+    "id": "prod_dog_treats",
+    "name": "Choostix Chicken Dog Treats",
+    "category": "Pet Supplies",
+    "price": 130,
+    "unit": "100 g",
+    "image": "🦴",
+    "description": "Delicious chewy treats packed with high protein chicken flavor. Ideal for training."
+  },
+  {
+    "id": "prod_notebook",
+    "name": "Classmate Spiral Notebook",
+    "category": "Stationery",
+    "price": 70,
+    "unit": "200 pages",
+    "image": "📓",
+    "description": "Single-line notebook with smooth paper and sturdy spiral binding. Perfect for school or office."
+  },
+  {
+    "id": "prod_desk_lamp",
+    "name": "Philips LED Study Desk Lamp",
+    "category": "Stationery",
+    "price": 699,
+    "unit": "1 unit",
+    "image": "💡",
+    "description": "Rechargeable LED desk light with 3 levels of brightness control and flexible gooseneck."
+  }
+]
