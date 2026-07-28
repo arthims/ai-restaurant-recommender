@@ -8,9 +8,15 @@ def ingest_data():
     print("Loading dataset from Hugging Face...")
     try:
         # Load the dataset
-        dataset = load_dataset("ManikaSaini/zomato-restaurant-recommendation")
-        # Most HF datasets use 'train' split by default
-        df = dataset['train'].to_pandas()
+        dataset = load_dataset("ManikaSaini/zomato-restaurant-recommendation", split="train")
+        
+        # CRITICAL FIX for Streamlit Cloud: Drop massive text columns BEFORE converting to pandas
+        heavy_cols = ['reviews_list', 'menu_item', 'dish_liked', 'url', 'phone', 'address']
+        cols_to_remove = [c for c in heavy_cols if c in dataset.column_names]
+        if cols_to_remove:
+            dataset = dataset.remove_columns(cols_to_remove)
+            
+        df = dataset.to_pandas()
         print(f"Dataset loaded. Shape: {df.shape}")
     except Exception as e:
         print(f"Error loading dataset: {e}")
@@ -20,10 +26,6 @@ def ingest_data():
     
     # Lowercase column names for easier access
     df.columns = [col.lower() for col in df.columns]
-    
-    # CRITICAL FIX for Streamlit Cloud: Drop massive text columns to prevent Out-Of-Memory (OOM) crashes
-    heavy_cols = ['reviews_list', 'menu_item', 'dish_liked', 'url', 'phone', 'address']
-    df = df.drop(columns=[col for col in heavy_cols if col in df.columns], errors='ignore')
     
     # Ensure critical columns exist. Let's use flexible names.
     name_col = 'name' if 'name' in df.columns else 'restaurant name' if 'restaurant name' in df.columns else None
